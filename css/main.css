@@ -280,8 +280,6 @@ top: -8px;
   }
 }
 
-
-
 /*=========================================
 	Features
 ==========================================*/
@@ -415,6 +413,7 @@ top: -8px;
 }
 
 .work-item:hover .overlay {
+	max-width: 400px;
 	opacity: 1;
 	filter: alpha(opacity=100);
 	
@@ -719,8 +718,8 @@ label.error {
   }
 
 .footer-single li {
-  line-height: 32px;
-     border: 2px solid;
+   line-height: 32px;
+   border: 2px solid;
    border-radius: 10px;
    text-align: center;
    margin-top: 3%;
