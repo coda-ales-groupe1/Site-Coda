@@ -1,1 +1,24 @@
 ## Default .htaccess file
+
+SetEnv REGISTER_GLOBALS 0
+SetEnv ZEND_OPTIMIZER 1
+SetEnv MAGIC_QUOTES 1
+SetEnv PHP_VER 5.5
+
+DirectoryIndex index.php index.html
+
+#Anti Listage
+Options -Indexes
+
+# deny most common except .php
+<FilesMatch "\.(inc|tpl|h|ihtml|sql|ini|conf|bin|spd|theme|module)$">
+deny from all
+</FilesMatch>
+
+<Files ~"\.ht$">
+Order Allow,Deny
+deny from all
+Satisfy All
+</Files>
+
+
